@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    animation: backgroundColorChange 5s linear infinite alternate both;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    width: min(42.8rem, 90%);
+    margin-top: -12rem;
+    background: white;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+/* -------------------- SCREEN 1 -------------------- */
+
+.screen1, .screen2 h1 {
+    color: #34355B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.screen1, p {
+    margin-top: 1.4rem;
+    color: #34355B;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.screen1 img {
+    margin-top: 2rem;
+}
+
+.screen1 img:hover {
+    cursor: pointer;
+    animation: vibrate-3 0.5s linear infinite both;
+}
+
+
+
+/* -------------------- SCREEN 2 -------------------- */
+
+.screen2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    align-items: center;
+}
+
+.screen2 img {
+    margin: 4.2rem 0;
+}
+
+.screen2 .sorte {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+    animation: sorte-slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.screen2 .sorte p {
+    color: black;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.screen2 button {
+    border-radius: 4px;
+    background: #FF9500;
+    padding: 1.6rem;
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-style: none;
+    width: 18rem;
+    cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/* ------------------ ANIMAÇÃO BACKGRUND ------------------ */
+@keyframes backgroundColorChange {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+/* ------------------ ANIMAÇÃO BACKGRUND ------------------ */
+
+
+
+/* ------------------ ANIMAÇÃO BISCOITO ------------------ */
+@keyframes vibrate-3 {
+    0% {
+      transform: translate(0);
+    }
+    10% {
+      transform: translate(-2px, -2px);
+    }
+    20% {
+      transform: translate(2px, -2px);
+    }
+    30% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(2px, 2px);
+    }
+    50% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, -2px);
+    }
+    70% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(-2px, -2px);
+    }
+    90% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+/* ------------------ ANIMAÇÃO BISCOITO ------------------ */
+
+
+
+/* ------------------ ANIMAÇÃO SORTE ------------------ */
+@keyframes sorte-slide {
+  0% {
+    transform: translateY(150%) scale(0.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+/* ------------------ ANIMAÇÃO SORTE ------------------ */
